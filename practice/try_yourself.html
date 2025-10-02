@@ -1,0 +1,77 @@
+<!DOCTYPE  html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>HTML Forms</h2>
+
+    <form action="/action_page.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+    
+    </form>
+    <p> If you click the "Submit" button, the form-data will be sent to a page called
+        "action_page.php". </p>
+    
+
+    <h3>Radio Buttons</h3>
+    <form>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+    </form>
+
+    <h4>Checkboxes</h4>
+    <p>The <strong> input type="checkbox"</strong> defines a checkbox:</p>
+
+    <form action="action/page.php">
+        <input type="checkbox" id="panduro1" name="panduro1" value="Mamora">
+        <label for="panduro1"> Mamora</label><br>
+        <input type="checkbox" id="panduro2" name="panduro2" value="Coquin">
+        <label for="panduro2"> Coquin(dodorion chico) </label><br>
+        <input type="checkbox" id="panduro3" name=" panduro3" value="Titian">
+        <label for="panduro3"> Titian estilista</label><br><br>
+        <input type="submit" value="Submit"> 
+    </form>
+    <div class="wrapper">
+        <form>
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div>
+                <label for="photo">Photo</label>
+                <input type="file" id="photo" name="photo">
+            </div>
+            <button>Save</button>
+        </form>
+    </div>
+    <div class="wrapper">
+        <form action="https://codepen.io/web-dot-dev/pen/7225931596b7eeafc448ad55d9c980fd" target="-blank">
+            <div>
+                <label for="mountain">Who is the most panduro in the world?</label>
+                <select id="mountain" name="mountain">
+                    <option value="mamora">Mamora</option>
+                    <option value="coquin">Coquin</option>
+                    <option value="titian">Titian</option>
+                </select>
+
+            </div>
+            <button>Save</button>
+
+        </form>
+           
+
+
+    </div>
+</body>
+</html>
