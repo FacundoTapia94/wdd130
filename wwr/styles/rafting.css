@@ -69,7 +69,7 @@ h2 {
     background-color: var(--accent1-color);
     color: #fff;
 }
-article {
+.hero article {
     position: absolute;
     top: 600px;
     left: 130px;
