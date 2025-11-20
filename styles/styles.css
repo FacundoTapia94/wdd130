@@ -5,6 +5,20 @@
 
 }
 
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header, footer, .grid {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
 :root {
     --primary-color: darkblue;
     --text-align: center;
@@ -13,16 +27,27 @@
 nav {
     background-color: var(--primary-color);
     padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 nav a {
     color: white;
     display: block;
     padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0.5rem;
 }
 
 h1 {
     color: var(--primary-color);
+    border-bottom: 1px solid #333;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
 main img {
@@ -40,13 +65,15 @@ p {
 }
 
 main {
-    max-width: 840px;
+    padding: 10px;
 }
 
 aside {
     position: relative;
     width: 20rem;
     text-align: var(--text-align);
+    grid-column: 1;
+    grid-row: 1;
 }
 
 aside h2{

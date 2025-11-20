@@ -1,0 +1,14 @@
+h1 {
+    text-align: center;
+    background-color: aqua;
+    padding: 16px;
+    color: blue;
+}
+
+main img {
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+    border: 1rem;
+    border-bottom: 1cap;
+}

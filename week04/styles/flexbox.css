@@ -4,7 +4,7 @@ body {
 }
 
 .flex-container {
-    border: 3px dashed darkcyan;
+    border: 3px dashed blue;
     background-color: lightyellow;
     display: flex;
     flex-wrap: wrap;
