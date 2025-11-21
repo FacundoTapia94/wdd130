@@ -23,6 +23,14 @@ body {
 header, main, footer {
     width: 840;
     margin: 0 auto;
+    max-width: 1000px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    justify-content: space-around;
 }
 
 h1, h2 {
@@ -33,6 +41,15 @@ h1, h2 {
 nav, p, section, article{
     margin: 16px;
     padding: 8px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--accent1-color);
+    padding: 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border: solid var(--accent1-color);
 }
 
 .socialmedia a {
@@ -71,8 +88,8 @@ h2 {
 }
 .hero article {
     position: absolute;
-    top: 600px;
-    left: 130px;
+    top: 330px;
+    left: 100px;
     background-color: var(--accent2-color);
     opacity: 0.7;
 
@@ -81,4 +98,54 @@ h2 {
 .hero article img {
     float: right;
     width: 125px;
+}
+
+section {
+    border: 1px solid rgb(0 0 0 / 10%);
+    background-color: #ddd;
+}
+
+.history img {
+    width: 200px;
+    height: auto;
+    align-content: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.images img {
+    width: 150px;
+    height: auto;
+    padding: 15px;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+figure {
+    text-align: center;
+}
+
+.socialmedia img {
+    width: 40px;
+    height: auto;
+    
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 650px 1fr;
+    border: 1px solid rgb(0 0 0 / 10%);
+    background-color: #ddd;
+}
+
+footer p {
+    text-align: right;
 }
